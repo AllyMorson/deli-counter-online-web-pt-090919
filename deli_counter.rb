@@ -6,7 +6,7 @@ def line(deli)
     deli.each.with_index(1) do |person, i|
       current_line << " #{i}. #{person}"  
     end
-    puts current_line
+    puts current_line #must call current_line or the original array will return only without the << #{i} and #{person}
   end
 end
 
